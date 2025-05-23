@@ -30,3 +30,11 @@ const deleteProduct = async (req,res) => {
 export {getProduct,postProduct,deleteProduct}
 
 
+
+
+////////////// ENV FAYLI 
+
+
+// MONGO_URI = mongodb+srv://xobali7311:N2AwiN37WuwwFGh0@cluster0.wegrafr.mongodb.net/
+// username = xobali7311
+// password = N2AwiN37WuwwFGh0

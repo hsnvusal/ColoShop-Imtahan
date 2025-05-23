@@ -6,6 +6,7 @@ import Admin from '../components/Admin/Admin'
 import AddProduct from '../components/Admin/AddProduct'
 import Basket from '../components/Basket/Basket'
 import Wish from '../components/Wish/Wish'
+import NotFound from '../pages/NotFound/NotFound'
 
 const router = () => {
   return (
@@ -16,6 +17,7 @@ const router = () => {
             <Route path='/admin/add' element={<AddProduct/>}></Route>
             <Route path='/basket' element={<Basket/>}></Route>
             <Route path='/wish' element={<Wish/>}></Route>
+            <Route path='*' element={<NotFound/>}></Route>
             
           </Route>
     </Routes>
