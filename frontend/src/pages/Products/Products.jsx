@@ -9,7 +9,7 @@ const Products = () => {
   const dispatch = useDispatch();
   const { items: products, status } = useSelector((state) => state.products);
   const [searchText, setSearchText] = useState("");
-  const [sorted, setSorted] = useState("");
+  const [sorted, setSorted] = useState("default");
   const filteredData =
     products &&
     products
@@ -52,7 +52,6 @@ const Products = () => {
     else {
         wish.push(item)
     }
-    alert("Favorilere Elave Edildi")
     localStorage.setItem("wish",JSON.stringify(wish))
   }
   return (

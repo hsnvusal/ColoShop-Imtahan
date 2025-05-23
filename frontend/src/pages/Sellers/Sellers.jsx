@@ -7,7 +7,7 @@ const Sellers = () => {
           <div className="container">
             <div className={styles.sellers_body}>
               <div className={styles.sellers_title}>
-                <h1>New Arrivals</h1>
+                <h1>Best Sellers</h1>
               </div>
               
               <div className={styles.sellers_cards}>
@@ -30,6 +30,11 @@ const Sellers = () => {
                       <img src="https://preview.colorlib.com/theme/coloshop/images/product_4.png" />
                       <h3>Blue Yeti USB Microphone Blackout Edition</h3>
                       <h4>$120.00</h4>
+                    </div>
+                    <div className={styles.sellers_card}>
+                      <img src="https://preview.colorlib.com/theme/coloshop/images/product_5.png" />
+                      <h3>Pryma Headphones, Rose Gold & Grey</h3>
+                      <h4>$180.00</h4>
                     </div>
               </div>
             </div>

@@ -124,17 +124,17 @@
   text-align: center;
   padding: 10px;
   gap: 10px;
-  width: 22%;
+  width: 18%;
   border-right: 1px solid rgb(233, 233, 233);
   img {
     width: 100%;
   }
 
-  @media screen and (max-width:991px) {
+  @media screen and (max-width: 991px) {
     width: 45%;
   }
 
-  @media screen and (max-width:691px) {
+  @media screen and (max-width: 691px) {
     width: 90%;
   }
 }
@@ -147,53 +147,53 @@
 }
 
 .products_card_button1 {
-    visibility: hidden;
-    opacity: 0;
-    width: 100%;
-    height: 40px;
-    background: #fe4c50;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-    @media screen and (max-width:991px) {
-        visibility: visible;
-        opacity: 1;
-    }
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  background: #fe4c50;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  @media screen and (max-width: 991px) {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .products_card_button2 {
-    visibility: hidden;
-    opacity: 0;
-    width: 100%;
-    height: 40px;
-    background: green;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    a {
-        text-decoration: none;
-        color: #fff;
-    }
-    @media screen and (max-width:991px) {
-        visibility: visible;
-        opacity: 1;
-    }
+  visibility: hidden;
+  opacity: 0;
+  width: 100%;
+  height: 40px;
+  background: green;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  @media screen and (max-width: 991px) {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 .products_card:hover {
-    .products_card_button1 {
-        visibility: visible;
-        opacity: 1;
-    }
-    .products_card_button2 {
-        visibility: visible;
-        opacity: 1;
-    }
+  .products_card_button1 {
+    visibility: visible;
+    opacity: 1;
+  }
+  .products_card_button2 {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .sellers_title {
@@ -210,7 +210,6 @@
     content: "";
   }
 }
-
 
 .sellers_cards {
   display: flex;
@@ -232,11 +231,122 @@
     width: 100%;
   }
 
-  @media screen and (max-width:991px) {
+  @media screen and (max-width: 991px) {
     width: 45%;
   }
 
-  @media screen and (max-width:691px) {
+  @media screen and (max-width: 691px) {
     width: 90%;
   }
+}
+
+.sellers {
+  margin-top: 50px;
+}
+
+.sellers_title {
+  margin-bottom: 50px;
+}
+.newsletter {
+    background: #f2f2f2;
+    margin-top: 81px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.newsletter_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.newsletter_text {
+    width: 50%;
+
+    @media screen and (max-width:991px) {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+}
+.newsletter_input {
+    width: 50%;
+  input {
+    width: 300px;
+    height: 46px;
+    background: #ffffff;
+    border: none;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width:991px) {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+
+.newsletter_body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+     @media screen and (max-width:991px) {
+        justify-content: center;
+
+    }
+}
+
+.newsletter_button {
+    width: 160px;
+    height: 46px;
+    border: none;
+    background: #fe4c50;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.blogs {
+    margin-top: 50px;
+}
+
+.blogs_title {
+  position: relative;
+  text-align: center;
+  h1::after {
+    display: block;
+    position: absolute;
+    top: calc(100% + 13px);
+    left: 48%;
+    width: 60px;
+    height: 5px;
+    background: #fe4c50;
+    content: "";
+  }
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.blogs_cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blogs_card  {
+    width: 30%;
+
+    @media screen and (max-width:991px) {
+        width: 45%;
+    }
+
+    @media screen and (max-width:691px) {
+        width: 90%;
+    }
+
+
 }

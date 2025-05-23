@@ -32,9 +32,6 @@ const Wish = () => {
               <h3>{item.title}</h3>
               <p>{item.description}</p>
               <p>Qiymət: ${item.price}</p>
-              <p>Miqdar: {item.quantity}</p>
-
-
               <button onClick={() => removeFromWish(item._id)}>🗑 Sil</button>
             </div>
             

@@ -34,6 +34,7 @@ const Basket = () => {
     updateBasket(newBasket);
   };
 
+  
   function getTotalPrice(basket) {
     return basket.reduce((sum, item) => sum + item.price * item.quantity, 0);
   }
@@ -51,7 +52,7 @@ const Basket = () => {
               <img src={item.image} alt="" />
               <h3>{item.title}</h3>
               <p>Qiymet: ${item.price}</p>
-              <p>Miqdar: ${item.quantity}</p>
+              <p>Miqdar: {item.quantity}</p>
 
               <button
                 className={styles.product_card_button}
@@ -59,8 +60,7 @@ const Basket = () => {
               >
                 🗑 Sil
               </button>
-              <button onClick={() => increaseQuantity(item._id)}>+</button>
-              <span>{item.quantity}</span>
+              <button onClick={() => increaseQuantity(item._id)} style={{marginRight:'20px'}}>+</button>
               <button onClick={() => decreaseQuantity(item._id)}>-</button>
             </div>
           ))}
@@ -71,20 +71,3 @@ const Basket = () => {
 };
 
 export default Basket;
-
-
-
-
-
-
-
-
-/////main.jsx import 
-import { StrictMode } from "react";
-import "./index.css";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router";
-import React from "react";
-import { Provider } from "react-redux";
-import { store } from "./redux/store";
-import Router from "./router/router";

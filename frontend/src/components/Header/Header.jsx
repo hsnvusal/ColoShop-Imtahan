@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container">
         <div className={styles.header_body}>
           <div className={styles.header_body_logo}>
-            <a href="#">
+            <a href="/">
               COLO
               <span>SHOP</span>
             </a>
@@ -15,7 +15,7 @@ const Header = () => {
             <div className={styles.header_body_items}>
               <a href="/">HOME</a>
               <a href="/admin">ADMIN</a>
-              <a href="/">PROMOTION</a>
+              <a href="/wish">WISH</a>
               <a href="/">PAGES</a>
               <a href="/">BLOG</a>
               <a href="/">CONTACT</a>
@@ -28,7 +28,7 @@ const Header = () => {
               <a href="#">
                 <i className="fa-solid fa-user"></i>
               </a>
-              <a href="#">
+              <a href="/basket">
                 <i className="fa-solid fa-cart-shopping"></i>
               </a>
             </div>

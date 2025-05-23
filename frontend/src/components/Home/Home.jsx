@@ -4,6 +4,8 @@ import styles from "./Home.module.css"
 import Arrivals from '../../pages/Arrivals/Arrivals'
 import Categories from '../../pages/Categories/Categories'
 import Sellers from '../../pages/Sellers/Sellers'
+import Newsletter from '../../pages/Newsletter/Newsletter'
+import Blogs from '../../pages/Blogs/Blogs'
 const Home = () => {
   return (
     <div className={styles}>
@@ -11,6 +13,8 @@ const Home = () => {
         <Categories/>
         <Products/>
         <Sellers/>
+        <Blogs/>
+        <Newsletter/>
     </div>
   )
 }
