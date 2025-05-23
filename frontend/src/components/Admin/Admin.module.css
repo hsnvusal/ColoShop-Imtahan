@@ -1,0 +1,94 @@
+.adminContainer {
+  padding: 30px;
+  max-width: 1000px;
+  padding-top: 120px;
+  margin: 0 auto;
+}
+.addBtn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.addBtn:hover {
+  background-color: #218838;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.deleteBtn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.deleteBtn:hover {
+  background-color: #c82333;
+}
+
+.admin_cards {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.admin_card {
+  width: 30%;
+
+  @media screen and (max-width: 991px) {
+    width: 45%;
+  }
+  @media screen and (max-width: 601px) {
+    width: 90%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.admin_card_text {
+  padding: 35px;
+  text-align: center;
+
+  h4 {
+    color: #fda403;
+  }
+  h2 {
+    line-height: 1.45;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  p {
+    margin-bottom: 1.5rem !important;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #b8b8b8;
+
+    a {
+      padding: 10px 20px;
+      font-size: 12px;
+      background: #fda403;
+      border-color: #fda403;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
